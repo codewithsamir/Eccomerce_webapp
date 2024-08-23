@@ -7,10 +7,10 @@ import Searchbox from "./Searchbox"
 import Sidebarclose from "./Sidebarclose"
 
 const Header = () => {
-  const [gotoright, setGoToRight] = useState("right-[-100%]")
+  const [gotoright, setGoToRight] = useState("right-[-120%]")
 
   return (
-    <header className=" py-5 px-2 lg:px-10 bg-white flex  justify-between items-center  gap-3">
+    <header className=" py-5 px-2 lg:px-16 bg-white flex  justify-between items-center  gap-3">
       
      <div className={`side-box md:flex gap-5 fixed bg-orange-800 top-0 ${gotoright} bottom-0 md:bg-transparent md:relative md:right-0 md:p-0  p-5 w-[300px] transition-all`}>
      <Sidebarclose setGoToRight={setGoToRight}  />
