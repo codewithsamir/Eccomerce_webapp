@@ -5,8 +5,8 @@ const Itemqty = ({getqty}:any) => {
   const [qty, setqty] = useState(1)
 
   const increaseitem = ()=>{
-    setqty(qty+1)
-    getqty(qty+1)
+    setqty((prev:any) => prev + 1)
+    getqty((prev:any) => prev + 1)
   }
   const decreaseitem = ()=>{
     if(qty>1){

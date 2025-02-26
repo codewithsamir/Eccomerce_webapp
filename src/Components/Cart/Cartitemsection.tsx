@@ -14,6 +14,7 @@ const Cartitemsection = () => {
     const[takeprice, settakeprice] = useState(100)
   return (
     <table className='w-full' >
+<thead>
 <tr className='border-b-2 border-gray-400 p-2 '>
     <th className='text-left  p-4 text-black capitalize'>items</th>
     <th className='text-left p-4 text-black capitalize'>price</th>
@@ -21,7 +22,9 @@ const Cartitemsection = () => {
     <th className='text-left p-4 text-black capitalize'>Total</th>
     <th className='text-left p-4 text-black capitalize'>action</th>
 </tr>
+</thead>
 
+<tbody>
 <tr  className='border-b-2 border-gray-400 '>
   <td className='p-4  text-black'><Items/></td>
    <td className='p-4 text-black'><Itemprice price={takeprice}/></td>
@@ -36,6 +39,7 @@ const Cartitemsection = () => {
    <td className='p-4 text-black '><Itemtotalprice price={takeprice} qty = {takeqty}/></td>
    <td className='p-4 text-black '><MdDelete color='red'  size={30} className="cursor-pointer"/></td>
 </tr>
+</tbody>
 
     </table>
   )

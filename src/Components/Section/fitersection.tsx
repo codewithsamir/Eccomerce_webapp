@@ -17,10 +17,14 @@ const Categorysection = () => {
   return (
     <div className="py-4 px-4 md:px-16 flex items-center justify-between flex-wrap gap-3">
     <div className="left-side flex items-center gap-5 flex-wrap">
-    {buttonsname.map((data,index)=>{
-  
-  return  <Categorybtn index= {index} btnname = {data} icons = {data === "all filter" ?<IoFilter /> : <GoChevronDown />}/>
-    })}
+    {buttonsname.map((data, index) => (
+        <Categorybtn
+          key={data} 
+          index={index}
+          btnname={data}
+          icons={data === "all filter" ? <IoFilter /> : <GoChevronDown />}
+        />
+      ))}
     </div>
 
     <div className="rightside">
